@@ -6,8 +6,8 @@ import { features } from 'process'
 
 const Features = () => {
   return (
-    <section className="border-2 border-red-500 flex-col flex items-center justify-center overflow-hidden bg-[url('/feature-bg.png')] bg-center bg-cover bg-no-repeat py-24">
-      <div className="max-container px-6 lg:px-20 3xl:px-0 relative w-full justify-end ">
+    <section className="flex-col flex items-center justify-center overflow-hidden bg-[url('/feature-bg.png')] bg-center bg-cover bg-no-repeat py-24">
+      <div className="max-container px-6 lg:px-20 3xl:px-0 relative w-full flex justify-end ">
         {/* left */}
         <div className="flex flex-1 lg:min-h-[900px]">
         <Image
@@ -30,13 +30,12 @@ const Features = () => {
           />
           <h2 className='capitalize text-[40px] font-semibold leading-[120%] lg:text-[64px] lg:font-semibold lg:leading-[120%]'>our Features</h2>
         </div>
-        <ul>
+        <ul className='mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-20'>
           {FEATURES.map((feature) => (
             <FeatureItems
             key={feature.title}
             title={feature.title}
             icon={feature.icon}
-            variant={feature.variant}
             description ={feature.description}
             />
           ))}
