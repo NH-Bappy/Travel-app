@@ -7,7 +7,7 @@ import FeatureItems from './FeatureItems'
 
 const Features = () => {
   return (
-    <section className="relative flex-col flex items-center justify-center overflow-hidden py-16 md:py-24 bg-gradient-to-b dark:bg-[hsl(0,0%,1%)] transition-colors duration-300">
+    <section id='pricing' className="relative flex-col flex items-center justify-center overflow-hidden py-16 md:py-24 bg-gradient-to-b dark:bg-[hsl(0,0%,1%)] transition-colors duration-300">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-30 dark:opacity-20">
         <div className="absolute inset-0 bg-[url('/feature-bg.png')] bg-center bg-cover bg-no-repeat mix-blend-overlay"></div>

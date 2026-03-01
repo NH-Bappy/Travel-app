@@ -7,8 +7,8 @@ import { link } from 'fs'
 
 const Footer = () => {
   return (
-    <footer className='flex items-center justify-center mb-24'>
-      <div className="px-6 lg:px-20 3xl:px-0 max-container w-full flex flex-col gap-14">
+    <footer id='contact' className='flex items-center justify-center mb-24'>
+      <div className="py-6 px-6 lg:px-20 3xl:px-0 max-container w-full flex flex-col gap-14">
       <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
       <Link href="/" className='mb-10'>
       <Image

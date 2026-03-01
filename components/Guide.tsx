@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Guide = () => {
   return (
-    <section className='flex items-center justify-center flex-col font-sans'>
+    <section id='guid' className='flex items-center justify-center flex-col font-sans'>
       <div className="px-6 lg:px-20 3xl:px-0 max-container w-full pb-24">
         <Image
         src='/camp.svg' 
