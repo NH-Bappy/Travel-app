@@ -1,30 +1,46 @@
+"use client";
+
 import Image from "next/image";
+import React from "react";
 
-type FeatureItem =  {
-    title:string;
-    icon:string;
-    description:string;
+interface FeatureItemsProps {
+  title: string;
+  icon: string;
+  description: string;
 }
 
-const FeatureItems = ({title,icon,description}:FeatureItem) => {
+const FeatureItems = ({ title, icon, description }: FeatureItemsProps) => {
   return (
-    <li className="flex w-full flex-1 flex-col items-start">
-        <div className="rounded-full p-4 lg:p-7 bg-green-500">
-        <Image
-        src={icon}
-        alt="map"
-        width={28}
-        height={28}
-        />
+    <div>
+      {/* Icon */}
+      <div className="flex items-center gap-4 mb-4">
+        <div className="relative w-12 h-12 flex items-center justify-center bg-black dark:bg-gray-800 rounded-xl shadow-md group-hover:scale-110 transition-transform duration-300">
+          <Image
+            src={icon}
+            alt={title}
+            width={28}
+            height={28}
+            className="object-contain"
+          />
         </div>
-        <h2 className="text-xl font-semibold leading-[120%] lg:text-[32px] lg:font-semibold lg:leading-[120%] mt-5 capitalize">
-        {title}
-        </h2>
-        <p className="text-base mt-5 bg-white/80 font-sans text-[#7B7B7B] lg:mt-[30px] lg:bg-none">
-        {description}
-        </p>
-    </li>
-  )
-}
+        <h3 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+          {title}
+        </h3>
+      </div>
 
-export default FeatureItems
+      {/* Description */}
+      <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+        {description}
+      </p>
+
+      {/* Decorative corner accent */}
+      <div className="absolute bottom-2 right-2 w-8 h-8 opacity-0 group-hover:opacity-100 transition-opacity">
+        <svg className="w-6 h-6 text-emerald-500 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </div>
+    </div>
+  );
+};
+
+export default FeatureItems;
