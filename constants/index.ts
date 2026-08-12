@@ -497,4 +497,83 @@ export const SOCIALS = {
     '/youtube.svg',
     '/wordpress.svg',
   ],
-};
+};
+
+// TESTIMONIALS DATASET
+export interface Testimonial {
+  name: string;
+  location: string;
+  rating: number;
+  avatar: string;
+  text: string;
+  trail: string;
+}
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    name: "Marcus Vance",
+    location: "Colorado, USA",
+    rating: 5,
+    avatar: "/person-1.png",
+    text: "Hilink’s offline 3D LiDAR maps saved our trip during a sudden fog on Mount Rainier. The turn-by-turn audio guided us straight back to our basecamp tent safely!",
+    trail: "Glacier Ridge Summit Trek",
+  },
+  {
+    name: "Sophia Chen",
+    location: "Vancouver, Canada",
+    rating: 5,
+    avatar: "/person-2.png",
+    text: "Booking a certified guide through Hilink for our Emerald Lake kayak expedition was seamless. The gear rental was delivered right to our launch point!",
+    trail: "Emerald Lake Kayak & Camp",
+  },
+  {
+    name: "Elena Rostova",
+    location: "Chamonix, France",
+    rating: 5,
+    avatar: "/person-3.png",
+    text: "The satellite emergency SOS telemetry gives my family complete peace of mind whenever I set off on solo multi-day alpine ridge hikes. Highly recommended!",
+    trail: "Putuk Truno Alpine Pass",
+  },
+];
+
+// BLOG & JOURNAL POSTS DATASET
+export interface BlogPost {
+  id: string;
+  title: string;
+  category: string;
+  date: string;
+  readTime: string;
+  image: string;
+  snippet: string;
+}
+
+export const BLOG_POSTS: BlogPost[] = [
+  {
+    id: "offline-map-guide",
+    title: "How to Navigate Remote Wilderness Without Cellular Signal",
+    category: "Navigation Tips",
+    date: "Aug 10, 2026",
+    readTime: "5 min read",
+    image: "/img-1.png",
+    snippet: "Master offline 3D topographic maps, GPS satellite locking, and battery optimization for long wilderness expeditions.",
+  },
+  {
+    id: "leave-no-trace-ethics",
+    title: "The 7 Principles of Leave No Trace Camping in 2026",
+    category: "Eco-Tourism",
+    date: "Aug 05, 2026",
+    readTime: "4 min read",
+    image: "/img-2.png",
+    snippet: "Protect fragile alpine ecosystems, manage campfire safety, and preserve natural wildlife habitats for future generations.",
+  },
+  {
+    id: "ultralight-gear-checklist",
+    title: "Essential Ultralight Camping Gear Checklist for Alpine Peaks",
+    category: "Gear Reviews",
+    date: "Jul 28, 2026",
+    readTime: "6 min read",
+    image: "/img-3.jpg",
+    snippet: "Pack lighter without sacrificing thermal safety. Our expert guide breaks down four-season tents, sleeping systems, and water purifiers.",
+  },
+];
+

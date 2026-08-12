@@ -21,12 +21,16 @@ Originally a single-page landing site, Hilink has been expanded into a **complet
 
 The platform now features **8 dedicated pages & dynamic sub-routes**, built with full interactive state and responsive design:
 
-### 1. 🏞️ **Destinations Catalog (`app/destinations/page.tsx`)**
-- **Category Filtering**: Filter campgrounds across 4 terrain types (*Mountain*, *Forest*, *Lake*, *Desert*) plus an *All* view.
-- **Difficulty Selector**: Filter by hiking difficulty level (*Easy*, *Moderate*, *Challenging*, *Advanced*).
-- **Real-Time Search Bar**: Live query matching across campsite titles, region names, and descriptions.
-- **Item Count & Badges**: Live count of matching destinations, elevation stats (e.g., *2,040 m*), hiking time, star ratings, price per night, and key amenities.
-- **Interactive Card CTA**: Direct link to dynamic campsite details pages.
+### 1. 🏠 **Rich Home Page Sections (`app/page.tsx`)**
+- **Hero Banner (`components/Hero.tsx`)**: Headline, elevation cards, review ratings, download CTAs.
+- **Top Destinations Showcase (`components/TopDestinations.tsx`)**: High-converting showcase of top-rated campgrounds (*Putuk Truno*, *Aguas Calientes*, *Emerald Lake*) with elevation badges, prices, and direct detail links.
+- **Campsite Horizontal Scroll (`components/Camp.tsx` & `CampSite.tsx`)**: Drag/scroll gallery of featured campsites and participant stats.
+- **Wilderness Guide Overlay (`components/Guide.tsx`)**: Navigation map overlay showing estimated track times and elevation points.
+- **Features Breakdown (`components/Features.tsx` & `FeatureItems.tsx`)**: 4 core highlights for offline maps, adventure scheduling, AR technology, and new locations.
+- **Wilderness Safety & Emergency SOS Banner (`components/SafetyBanner.tsx`)**: Prominent 24/7 satellite emergency SOS beacon callout with zero-cell GPS lock badges.
+- **Climber Community Testimonials (`components/Testimonials.tsx`)**: Real ratings, user avatars, and verified trek quotes from 120,000+ climbers.
+- **Outdoor Journal & Eco-Trek Articles (`components/BlogNews.tsx`)**: Wilderness articles on offline navigation tips, Leave-No-Trace ethics, and ultralight gear checklists.
+- **Get App CTA (`components/GetApp.tsx`)**: Mobile app download CTA for iOS and Android.
 
 ### 2. 📍 **Dynamic Campsite Details (`app/destinations/[id]/page.tsx`)**
 - **Next.js 16 Dynamic Segment**: Routes dynamically to any destination ID (`/destinations/putuk-truno`, `/destinations/emerald-lake`, `/destinations/aguas-calientes`, etc.).
