@@ -16,8 +16,8 @@ const Hero = () => {
       height={50}
       className='absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]'
       />
-      <h1 className='text-[52px] font-semibold leading-[120%] lg:text-[88px] lg:font-semibold lg:leading-[120%] lg:pt-4'>Putuk Truno Camp Area</h1>
-      <p className='text-base mt-6 text-[#7B7B7B] xl:max-w-[520px]'>Camping isn’t just about pitching tents and building fires—it’s about freedom. It’s about feeling the earth beneath your feet, breathing in crisp morning air, and gazing at a sky so full of stars it makes you dream bigger. It’s about waking up to the sound of birds instead of alarms and realizing that the world is far more beautiful than we often remember</p>
+      <h1 className='text-[52px] font-semibold leading-[120%] lg:text-[88px] lg:font-semibold lg:leading-[120%] lg:pt-4 text-gray-900 dark:text-white'>Putuk Truno Camp Area</h1>
+      <p className='text-base mt-6 text-[#7B7B7B] dark:text-gray-300 xl:max-w-[520px]'>Camping isn’t just about pitching tents and building fires—it’s about freedom. It’s about feeling the earth beneath your feet, breathing in crisp morning air, and gazing at a sky so full of stars it makes you dream bigger. It’s about waking up to the sound of birds instead of alarms and realizing that the world is far more beautiful than we often remember</p>
       <div className="my-11 flex flex-wrap gap-5">
         <div className="flex items-center gap-2">
           {Array(5).fill(1).map((_,index) => (
@@ -30,9 +30,9 @@ const Hero = () => {
             />
           ))}
         </div>
-        <p className='text-base font-semibold lg:text-xl lg:font-semibold text-[#021639]'>
+        <p className='text-base font-semibold lg:text-xl lg:font-semibold text-[#021639] dark:text-white'>
           198k
-          <span className='text-base lg:text-lg ml-1 underline'>Ecellent Reviews</span>
+          <span className='text-base lg:text-lg ml-1 underline text-gray-700 dark:text-gray-300'>Excellent Reviews</span>
         </p>
       </div>
       <div className="flex flex-col w-full gap-3 sm:flex-row">

@@ -11,11 +11,10 @@ const Guide = () => {
         width={50}
         height={50}
         />
-        <p className='capitalize text-lg -mt-1 mb-3 text-red-800'>We are here for you</p>
+        <p className='capitalize text-lg -mt-1 mb-3 text-emerald-600 dark:text-emerald-400 font-semibold'>We are here for you</p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10 capitalize">
-          <h2 className='text-4xl font-semibold leading-[120%] lg:text-6xl lg:font-semibold lg:leading-[120%] xl:max-w-[390px]'>guide you to easy path</h2>
-          <p className="text-base text-[#7B7B7B] lg:max-w-[520px] font-sans">With the Hilink app, getting lost is a thing 
-           the past! Our offline maps ensure seamless navigation, even without an internet connection. Invite your friends and family to explore the wilderness, trek through valleys, and conquer mountain peaks with confidence and ease</p>
+          <h2 className='text-4xl font-semibold leading-[120%] lg:text-6xl lg:font-semibold lg:leading-[120%] xl:max-w-[390px] text-gray-900 dark:text-white'>guide you to easy path</h2>
+          <p className="text-base text-[#7B7B7B] dark:text-gray-300 lg:max-w-[520px] font-sans">With the Hilink app, getting lost is a thing of the past! Our offline maps ensure seamless navigation, even without an internet connection. Invite your friends and family to explore the wilderness, trek through valleys, and conquer mountain peaks with confidence and ease</p>
           </div>
       </div>
 
@@ -27,7 +26,7 @@ const Guide = () => {
         height={580}
         className='w-full object-cover object-center 2xl:rounded-[40px]'
         />
-        <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:left-[5%] lg:top-20">
+        <div className="absolute flex bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md py-8 pl-5 pr-7 gap-3 rounded-3xl border border-gray-100 dark:border-gray-800 shadow-xl md:left-[5%] lg:top-20">
           <Image
           src="/meter.svg"
           alt='meter.svg'
@@ -37,16 +36,16 @@ const Guide = () => {
           />
           <div className="flexBetween flex-col">
           <div className="flex flex-col w-full">
-            <div className="flexBetween w-full">
-              <p className='text-base text-[#A2A2A2]'>Destination</p>
-              <p className='text-base font-semibold text-green-500'>48 min</p>
+            <div className="flexBetween w-full gap-4">
+              <p className='text-base text-[#A2A2A2] dark:text-gray-400'>Destination</p>
+              <p className='text-base font-semibold text-emerald-600 dark:text-emerald-400'>48 min</p>
             </div>
-            <p className='text-xl font-semibold mt-2'>Aguas Calientes</p>
+            <p className='text-xl font-semibold mt-2 text-gray-900 dark:text-white'>Aguas Calientes</p>
           </div>
 
           <div className="flex flex-col w-full">
-              <p className='text-base text-[#A2A2A2]'>Start track</p>
-            <h4 className='text-xl font-semibold mt-2 whitespace-nowrap '>wonorejo pasuruan</h4>
+              <p className='text-base text-[#A2A2A2] dark:text-gray-400'>Start track</p>
+            <h4 className='text-xl font-semibold mt-2 whitespace-nowrap text-gray-900 dark:text-white'>Wonorejo Pasuruan</h4>
           </div>
           </div>
         </div>
